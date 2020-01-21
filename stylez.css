@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS Zen Garden Page Header stylesheet */
+body{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 2.00;
+}
+
+header {
+  width: 100%;
+  background-image: url('http://15.222.122.223/~Sierra200366619/COMP1054/img/masthead.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  background-position: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+  background-color: rgba(7, 5, 19, 0.5);
+  /* background-color: rgba(29, 91, 142, 0.5); */
+  color: white;
+  font-size: 65px;
+}
+
+h2 {
+  font-style: oblique;
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  display: inline-block;
+  padding: 180px 0px 0px 0px;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+/* link effects  */
+ a {
+   /* remove link default styles before adding new ones*/
+   text-decoration: none;
+   line-height: 1;
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+ a::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #352D5C 20%, #214984 80%);
+   transition: transform .25s ease-out;
+}
+
+a:hover {
+   color: #fff;
+}
+
+a:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
+/* end of link effects */
+
+#zen-summary, #zen-preamble, #zen-explanation, #zen-requirements, #zen-benefits, #zen-participation{
+  margin: 50px;
+  line-height: 2.00;
+  display: flex;
+   /* flex-direction: column; */
+  flex-wrap: wrap; 
+  /* padding: 10px 0px 0px 0px; */
+}
+
+body {
+  display: flex;
+}
+
+.wrapper {
+  /* background-color: rgb(11, 44, 75); */
+  /* background-color: #0B2C4B; */
+  /* color: white; */
+  padding: 20px;
+  display: block;
+}
+
+/* removing margin from h3 in aside */
+h3.select{
+  margin: 0px;
+}
+
+/* taking bullets off of aside list */
+aside ul {
+  list-style-type: none;
+}
+
+aside {
+  float: right;
+}
+
+.supporting > footer {
+  font-size: 45px;
+  text-align: center;
+  display: block;
+  margin: 50px;
+  /* display: flex; */
+}
